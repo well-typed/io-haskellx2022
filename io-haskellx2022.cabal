@@ -1,0 +1,16 @@
+cabal-version: 2.0
+name: io-haskellx
+author: Andres Löh <andres@well-typed.com>
+version: 0.1
+build-type: Simple
+
+executable talk
+  default-language: Haskell2010
+  ghc-options: -pgmL lhs2TeX -optL-Pincludes/: -optL--pre
+  build-depends:
+    base,
+    blaze-html,
+    http-types,
+    scotty
+  hs-source-dirs: .
+  main-is: io-haskellx2022.hs
